@@ -1,5 +1,5 @@
 import React,{useContext} from 'react';
-import { useParams,  } from 'react-router';
+import { useParams,  } from 'react-router-dom';
 import { MyContext } from '../context/Mycontext';
 
 export default function DetailedTaskcomp() {

@@ -9,55 +9,6 @@ import NotFound from '../views/NotFound';
 import DetailedTaskcomp from './DetailedTaskcomp';
 import Container from '../context/Container';
 
-// const App = () => {
-
-// return (
-//   <Container>
-//   <HashRouter>
-//   <div className="app">
-
-//     <Navigation></Navigation>
-
-//     <Switch>
-//     <Route exact path= "/">
-
-//     <ToDosContainer  
-   
-//     />
-    
-
-// {/* TODOSCONATAINER COMPONENT */}
-//     <ToDonesContainer 
-   
-//     />
-   
-//     </Route>
-
-// {/* HELP COMPONENT */}
-//     <Route path= "/Help">
-//     <Help/>
-//     </Route>
-    
-
-//     <Route path="/task/:text" >
-//     <DetailedTaskcomp/>
-//     </Route>
-
-
-// {/* PAGENOTFOUND COMPONENT */}
-//     <Route>
-//       <NotFound/>
-//     </Route>
-
-//     </Switch>
-    
-//   </div>
-//   </HashRouter> 
-//   </Container>
-// );
-// };
-
-// export default App;
 
 
 
@@ -70,7 +21,7 @@ const App = () => {
           <Navigation></Navigation>
           <Switch>
             {/*  <Route path="/" component={}/> */}
-            {/*  <Route path="/" render={()=>(<><ToDosContainer /> <ToDonesContainer /> </>)} /> */}
+             <Route path="/" render={()=>(<><ToDosContainer /> <ToDonesContainer /> </>)} />
             <Route exact path="/">
               <ToDosContainer/>
               <ToDonesContainer/>
