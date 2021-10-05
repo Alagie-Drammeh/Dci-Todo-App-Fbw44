@@ -1,9 +1,10 @@
-
-
 $mainBg: #20272a;
 $navBg: #1d2226;
-$inputBg: #91f9ed;
-$btnBg: #002400;
+$inputBg: #04619f;
+$btnBg: linear-gradient(147deg, #000000 0%, #04619f 74%);
+
+
+
 * {
   font-family: monospace;
 }
@@ -56,7 +57,9 @@ $btnBg: #002400;
     align-items: left;
     justify-content: space-between;
     // background: $navBg;
-    background: linear-gradient(to right, #184fae80, #9f34a98e) !important; 
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+    // background: linear-gradient(to right, #184fae80, #9f34a98e) !important; 
     min-height: 60px;
     padding: 10px;
     a {
@@ -67,6 +70,7 @@ $btnBg: #002400;
     padding: 20px 10px;
     .todo-form {
       .input-item {
+        text-decoration: none;
         input {
           padding: 10px;
           border-radius: 20px;
@@ -81,6 +85,7 @@ $btnBg: #002400;
     }
     .todos {
       padding-top: 30px;
+      
       
       .todo-item {
         padding: 5px 10px;
@@ -116,8 +121,10 @@ $btnBg: #002400;
 
 
 /* Compiles to: */
-@media (min-width: 453px) and (max-width: 768px) {
-
+@media (min-width: 320px) and (max-width: 640px) {
+.btn{
+  margin-top: 10px;
+}
 }
 
 @media (min-width: 768px) and (max-width: 850px) {
