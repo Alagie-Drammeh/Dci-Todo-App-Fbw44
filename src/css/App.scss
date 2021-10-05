@@ -1,3 +1,5 @@
+
+
 $mainBg: #20272a;
 $navBg: #1d2226;
 $inputBg: #91f9ed;
@@ -9,10 +11,24 @@ $btnBg: #002400;
 
 .app {
   height: 100vh;
-  background: $mainBg;
+  // background: $mainBg;
   color: white;
   overflow: scroll;
   margin-top: 40px;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+     ),
+     url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.dribbble.com%2Fusers%2F1658867%2Fscreenshots%2F4721860%2Fwallpaper.png&f=1&nofb=1");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    // overflow-x: hidden;
+    background-size: cover;
+    // position: relative;
+    
+  
+   }
 
   .btn {
     border: none;
@@ -39,7 +55,8 @@ $btnBg: #002400;
     display: flex;
     align-items: left;
     justify-content: space-between;
-    background: $navBg;
+    // background: $navBg;
+    background: linear-gradient(to right, #184fae80, #9f34a98e) !important; 
     min-height: 60px;
     padding: 10px;
     a {
@@ -96,4 +113,13 @@ $btnBg: #002400;
       }
     }
   }
+
+
+/* Compiles to: */
+@media (min-width: 453px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 850px) {
+
 }
